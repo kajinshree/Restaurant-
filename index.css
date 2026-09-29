@@ -1,0 +1,448 @@
+/* Font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Universal Selector */
+
+* {
+
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    margin: 0px;
+
+}
+
+
+/* Variable */
+
+:root {
+
+    --font1: "Alex Brush", cursive;
+
+    --font2: "Montserrat", sans-serif;
+
+    --weight: 400;
+
+    --lcolor: rgb(233, 217, 125);
+
+    --gcolor: gold;
+
+    --wcolor: white;
+
+    --bcolor: black;
+
+}
+
+
+/* HOME PAGE */
+
+header {
+
+    padding: 0px !important;
+
+}
+
+
+main {
+
+    height: 100vh;
+
+    width: 100%;
+
+    position: relative;
+
+    background-color: black;
+
+        overflow: hidden;
+
+}
+
+
+/* NAVBAR */
+
+.nav {
+
+    position: absolute !important;
+
+    top: 0px;
+
+    left: 0px;
+
+    width: 100%;
+
+    padding: 20px 50px !important;
+
+    background-color: transparent !important;
+
+    display: flex !important;
+
+    justify-content: space-between !important;
+
+    align-items: center !important;
+
+    z-index: 10;
+
+}
+
+
+/* AURELIA */
+
+.navbar-brand {
+
+    color: var(--gcolor) !important;
+
+    font-family: var(--font1);
+
+    font-size: 35px !important;
+
+    letter-spacing: 8px;
+
+}
+
+
+/* NAVIGATION */
+
+.up {
+
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center !important;
+
+    gap: 25px;
+
+}
+
+
+.up a {
+
+    position: relative;
+
+}
+
+
+/* RIGHT UNDERLINE */
+
+.up a::after {
+
+    position: absolute;
+
+    bottom: 0px;
+
+    right: 0px;
+
+    content: "";
+
+    height: 2px;
+
+    width: 0%;
+
+    background-color: var(--lcolor);
+
+    transition: 1s;
+
+}
+
+
+.up a:hover::after {
+
+    width: 50%;
+
+}
+
+
+/* LEFT UNDERLINE */
+
+.up a::before {
+
+    position: absolute;
+
+    bottom: 0px;
+
+    left: 0px;
+
+    content: "";
+
+    height: 2px;
+
+    width: 0%;
+
+    background-color: var(--lcolor);
+
+    transition: 1s;
+
+}
+
+
+.up a:hover::before {
+
+    width: 50%;
+
+}
+
+
+/* NAV LINKS */
+
+.up .nav-link {
+
+    color: var(--wcolor) !important;
+
+    font-family: var(--font2);
+
+    font-size: 20px;
+
+}
+
+
+.up .nav-link:hover {
+
+    color: var(--lcolor) !important;
+
+}
+
+
+/* BOOK NOW */
+
+.book {
+
+    color: var(--lcolor) !important;
+
+    border: 1px solid var(--gcolor) !important;
+
+    background-color: transparent !important;
+
+    border-radius: 15px !important;
+
+    padding: 8px 15px !important;
+
+}
+
+
+.book:hover {
+
+    box-shadow: -6px 3px 5px gold,
+                6px -4px 5px gold !important;
+
+    border: 3px solid rgb(172, 172, 172) !important;
+
+}
+
+
+/* VIDEO */
+
+video {
+
+    height: 100%;
+
+    width: 100%;
+
+    object-fit:fill;
+
+    opacity: 0.6;
+
+    display: block;
+
+}
+
+
+/* MENU BAR */
+
+.bar {
+
+    display: none;
+
+}
+
+
+.menu {
+
+    font-size: 20px;
+
+}
+
+
+.check {
+
+    display: none;
+
+}
+
+ /* OPEN MOBILE MENU */
+
+    input:checked + .up {
+
+        right: 0px !important;
+
+    }
+
+    .logo{
+
+        height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 108px;
+    left: 61px;
+
+    }
+
+    .top p{
+
+        position: absolute;
+    top: 205px;
+    left: 25px;
+    color:var(--wcolor);
+    font-family:var(--font2);
+
+    }
+
+    .top h1{
+
+        position: absolute;
+       top: 250px;
+    left: 25px;
+    font-family:var(--font1);
+    color:var(--lcolor);
+        font-size: 60px;
+    width: 30%;
+
+    }
+
+    .top p:last-child{
+
+
+            top:400px;
+    font-size:30px;
+    font-family: var(--font2);
+    width:40%;
+
+    }
+
+
+/* Media Qurey  */
+
+/* Tab Qurey  */
+
+@media only screen and (min-width: 668px) and (max-width: 900px){
+
+    .navbar-brand {
+    
+    font-size: 20px !important;
+
+    }
+
+    .up .nav-link {
+
+    font-size: 14px;
+    }
+
+    .btn{
+
+        
+    font-size: 10px;
+}
+
+.top h1{
+
+        font-size: 40px;
+
+}
+
+}
+
+/* Media Qurey  */
+
+/* PHONE SCREEN */
+
+
+@media only screen and (min-width: 300px) and (max-width: 669px) {
+
+
+    /* MENU ICON */
+
+    .bar {
+
+        display: inline-block;
+
+        cursor: pointer;
+
+        z-index: 20;
+
+    }
+
+
+    
+    .menu {
+
+        font-size: 20px;
+
+    }
+
+    /* NAVBAR */
+    .nav {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px !important;
+    }
+
+
+    .up {
+
+        position:absolute !important;
+
+        top: 80px !important;
+
+        right:-100% !important;
+
+        background-color: var(--bcolor) !important;
+
+        width: 60% !important;
+
+        height: 78vh !important;
+
+        flex-direction: column !important;
+
+        justify-content: flex-start !important;
+
+        align-items: center !important;
+
+        padding: 0px !important;
+
+        padding-top: 60px !important;
+
+        transition: 1.5s !important;
+
+        font-size: 25px !important;
+
+        border-radius: 30px !important;
+
+        margin-left: 60px !important;
+
+    }
+
+
+
+    .navbar-brand {
+
+    font-size: 19px !important;
+    letter-spacing: 4px;
+
+    }
+
+    .top h1{
+
+           font-size:37px;
+    width: 75%;
+
+
+
+    }
+
+}
