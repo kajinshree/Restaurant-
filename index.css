@@ -30,7 +30,7 @@
 
     --lcolor: rgb(233, 217, 125);
 
-    --gcolor: gold;
+    --gcolor:goldenrod;
 
     --wcolor: white;
 
@@ -228,8 +228,8 @@ header {
 
 .book:hover {
 
-    box-shadow: -6px 3px 5px gold,
-                6px -4px 5px gold !important;
+    box-shadow: -6px 3px 5px goldenrod,
+                6px -4px 5px goldenrod !important;
 
     border: 3px solid rgb(172, 172, 172) !important;
 
@@ -262,7 +262,7 @@ video {
 }
 
 
-.menu {
+.incon {
 
     font-size: 20px;
 
@@ -335,8 +335,8 @@ video {
         font-family:var(--font2);
         padding:6px 15px;
             background-color: transparent;
-    color: var(--wcolor);
-    border: 2px solid gold;
+    color: var(--lcolor);
+    border: 2px solid enrod;
         position:absolute;
         bottom:20px;
         right:25px;
@@ -346,8 +346,8 @@ video {
     .top button:hover{
 
         transform:translate(10px);
-        box-shadow: -6px 3px 5px gold, 6px -3px 5px gold;
-        /* box-shadow: 0 4px 8px 0 gold,0 6px 20px 0 gold; */
+        box-shadow: -6px 3px 5px goldenrod, 6px -3px 5px goldenrod;
+        /* box-shadow: 0 4px 8px 0 goldenrod,0 6px 20px 0 goldenrod; */
     }
 
 
@@ -357,8 +357,8 @@ video {
 
             background-color:var(--bcolor);
             min-height:633px;
-            border-bottom:2px solid gold;
-            border-top:2px solid gold;
+            border-bottom:2px solid goldenrod;
+            border-top:2px solid goldenrod;
             /* position: relative; */
             display:flex;
             gap:50px;
@@ -373,7 +373,7 @@ video {
     left: 50px; */
     margin-top:10%;
     margin-left:30px;
-    border: 2px solid gold;
+    border: 2px solid goldenrod;
     cursor:pointer;
      transition: transform 0.5s ease;
 
@@ -498,10 +498,173 @@ video {
 
                  background-color:black;
                  min-height:633px;
-                 border-bottom:2px solid gold;
-                 border-top:2px solid gold;
+                 border-bottom:2px solid goldenrod;
+                 border-top:2px solid goldenrod;
+                 display:flex;
+                 justify-content:center;
+                 align-items:center;
 
                }
+
+                   
+                   /* LEFT SIDE BOX  */
+
+
+                   .left-side{
+
+                    /* background-color:rgb(219, 77, 77); */
+                    height:500px;
+                    width:50%;
+                    position:relative;
+
+                   }
+
+                   .left-side h2{
+
+                    font-family:var(--font2);
+                    font-weight: var(--weight);
+                    font-size:20px;
+                    letter-spacing:2px;
+                    color:var(--lcolor);
+                    position:absolute;
+                    top:50px;
+                    left:40px;
+
+
+                   }
+
+                   .left-side h1{
+
+                    font-family:var(--font1);
+                    font-weight:var(--weight);
+                    font-size:55px;
+                    letter-spacing:3px;
+                    color:var(--gcolor);
+                    position:absolute;
+                    top:100px;
+                    left:40px;
+
+                   }
+
+                   .left-side p{
+
+                    font-family:var(--font2);
+                    font-weight:var(--weight);
+                    font-size:28px;
+                    color:var(--wcolor);
+                    position:absolute;
+                    top:180px;
+                    left:40px;
+                    width:75%
+
+                   }
+
+
+                   .left-side button{
+
+                    font-size:15px;
+                    letter-spacing:3px;
+                    border-radius:50px;
+                    font-family:var(--font2);
+                    padding:6px 15px;
+                    background-color: transparent;
+                    color: var(--lcolor);
+                    border: 2px solid goldenrod;
+                    position:absolute;
+                    top:410px;
+                    left:40px;
+
+                   }
+
+                   .left-side button:hover{
+
+                     transform:translate(10px);
+        box-shadow: -6px 3px 5px goldenrod, 6px -3px 5px goldenrod;
+
+                   }
+
+                   
+
+
+                   /* RIGHT SIDE BOX  */
+
+                   .right-side{
+
+                    /* background-color:wheat; */
+                    height:500px;
+                    width:50%;
+                    display:flex;
+                    gap:20px;
+                    justify-content:center;
+                    align-items:center;
+                    margin-right:20px;
+
+                   }
+
+                   .right-side .card{
+
+                        width: 220px;
+                         height: 290px;
+                    position: relative;
+                    transform-style: preserve-3d;
+                     transform: perspective(500px);
+                     transition: all 1s;
+
+
+                   }
+
+                   /* CARD  */
+
+                   .box3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    transform-style: preserve-3d;
+    background-color:black;
+    border:2px solid goldenrod;
+    
+                   }
+
+                    /* FORNT SIDE BOX  */
+
+                   .box3 img{
+
+                        height:60%;
+                        width:80%;
+                        transform: translatez(50px);
+
+
+                   }
+
+                   /* BACK SIDE CARD  */
+         
+                   .back{
+
+                        transform: rotatey(180deg);
+
+                   }
+
+                   .card:hover{
+
+transform:rotatey(180deg);
+
+}
+
+.back p{
+
+    color:var(--lcolor);
+    font-size:12px;
+    width:85%;
+
+}
+
+
+
 
 
 /* Media Qurey  */
@@ -539,6 +702,24 @@ video {
     margin-left:5%;
 
 }
+
+   
+        /* MENU PAGE  */
+
+
+        .left-side h1 {
+
+        font-size: 42px;
+    letter-spacing: 2px;
+
+        }
+
+        .left-side p {
+
+        font-size: 23px;
+        top:210px;
+
+        }
 
 }
 
@@ -619,6 +800,41 @@ video {
 
       }
 
+
+      /* MENU PAGE  */
+
+      /* RIGHT SIDE BOX  */
+
+
+      .right-side{
+
+        flex-wrap:wrap;
+
+      }
+
+      .right-side .card {
+    width: 160px;
+    height: 234px;
+
+      }
+
+
+      /* LEFT SIDE BOX  */
+
+      .left-side h1{
+
+        font-size: 36px;
+
+      }
+
+      .left-side p {
+    
+    font-size: 19px;
+    top: 218px;
+
+      }
+
+
 }
 
 /* Media Qurey  */
@@ -645,7 +861,7 @@ video {
 
 
     
-    .menu {
+    .incon {
 
         font-size: 20px;
 
@@ -792,6 +1008,78 @@ video {
 
          }
 
+
+         /* MENU PAGE  */
+
+         .menu{
+
+            align-items: start;
+            flex-wrap: wrap;
+            width:925px;
+            
+         }
+
+         /* LEFT SIDE BOX  */
+
+         .left-side{
+
+            width:100%;
+            height:450px;
+
+         }
+
+
+         .left-side h2{
+
+                top: 19px;
+                left: 65px;
+
+         }
+
+
+         .left-side h1{
+
+                font-size: 36px;
+    text-align: center;
+                 top: 55px;
+    left: -5px;
+
+
+         }
+
+         .left-side p{
+
+            top: 159px;
+    left: 50px;
+    font-size:20px;
+
+
+         }
+
+         .left-side button{
+
+                top: 376px;
+
+
+         }
+
+
+         /* RIGHT SIDE BOX  */
+
+         .right-side {
+
+                position: absolute;
+            top: 344%;
+    width:100%; 
+        flex-wrap:wrap;
+
+      }
+
+      .right-side .card {
+    width: 110px;
+    height:180px;
+
+      }
 
 }
 
