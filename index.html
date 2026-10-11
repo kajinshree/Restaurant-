@@ -29,7 +29,9 @@
 
         <header id="home">
 
-            <nav class="navbar nav">
+                         <!-- NAV BAR -->
+
+        <nav class="navbar nav">
 
                 <div>
                     <a class="navbar-brand" href="#">
@@ -55,13 +57,13 @@
 
                     <a class="nav-link" href="#about">About</a>
 
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="#menu">Menu</a>
 
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
 
-                    <button class="btn book" type="button">
+                    <a href="#booking"><button class="btn book" type="button">
                         Book Now
-                    </button>
+                    </button></a>
 
                 </div>
 
@@ -69,11 +71,15 @@
 
 
 
-            <video muted autoplay loop>
+          
+<video muted autoplay loop playsinline>
+    <source src="./foodvideo.mp4" type="video/mp4">
+</video>
 
-                <source src="./video.mp4" type="video/mp4">
+<audio controls loop>
+    <source src="./foodaudio.mp3" type="audio/mpeg">
+</audio>
 
-            </video>
 
             <img src="./logo.png" class="logo" />
 
@@ -97,7 +103,7 @@
         </header>
 
 
-        <!-- ABOUT PAGE  -->
+                 <!-- ABOUT PAGE  -->
 
         <section class="about" id="about">
 
@@ -157,11 +163,11 @@
             </div><!-- left close  -->
 
 
-        </section> <!-- about close  -->
+        </section> <!-- about close -->
 
         <!-- MENU PAGE  -->
 
-        <section class="menu">
+        <section class="menu" id="menu">
 
 
             <!-- LEFT SIDE BOX  -->
@@ -286,7 +292,553 @@
 
             </div><!-- Right Close  -->
 
+           
         </section> <!-- menu close  -->
+
+         <section class="menu-1" id="menu">
+
+
+                 <h1>Our Chefs</h1>
+
+
+                 <!-- ROTATE-CARD  -->
+
+                 <div class="rotate-card">
+    <span style="--i: 1"><img src="./img1.jpeg" /></span>
+        <span style="--i: 2"><img src="./img2.jpeg" /></span>
+        <span style="--i: 3"><img src="./img3.jpeg" /></span>
+        <span style="--i: 4"><img src="./img4.jpeg" /></span>
+        <span style="--i: 5"><img src="./img5.jpeg" /></span>
+        <span style="--i: 6"><img src="./img6.jpeg" /></span>
+        <span style="--i: 7"><img src="./img7.jpeg" /></span>
+        <span style="--i: 8"><img src="./img8.jpeg" /></span>
+        <span style="--i: 9"><img src="./img9.jpeg" /></span>
+        <span style="--i: 10"><img src="./img10.jpeg" /></span>
+        <span style="--i: 11"><img src="./img11.jpeg" /></span>
+        <span style="--i: 12"><img src="./img12.jpeg" /></span>
+        <span style="--i: 13"><img src="./img13.jpeg" /></span>
+        <span style="--i: 14"><img src="./img14.jpeg" /></span>
+
+    </div>
+
+ 
+                   </section><!-- Menu-1 close  -->
+
+
+                   </section>
+
+
+    <!-- HERO SECTION -->
+<section class="hero" id="contact">
+    <div class="container">
+        <p class="gold-text">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h1>Get in Touch</h1>
+        <p>
+            Have a question or planning a special evening?
+            We are here to make your experience unforgettable.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- CONTACT DETAILS -->
+            <div class="col-lg-5">
+
+                <p class="gold-text">CONTACT INFORMATION</p>
+                <h2>Let's Connect</h2>
+
+                <p class="description">
+                    Whether you need a reservation, event arrangements,
+                    or simply want to know more about  Aurelia,
+                    our team is ready to assist you.
+                </p>
+
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h5>Our Location</h5>
+                        <p>123 Elite Avenue, Chennai, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h5>Phone Number</h5>
+                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h5>Email Address</h5>
+                        <p><a href="mailto:hello@velora.com">hello@velora.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div>
+                        <h5>Opening Hours</h5>
+                        <p>Monday - Sunday</p>
+                        <p>12:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div class="col-lg-7">
+                <div class="contact-form">
+
+                    <p class="gold-text">SEND US A MESSAGE</p>
+                    <h2>We'd Love to Hear From You</h2>
+
+                    <form action="#" method="post">
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control"
+                                       id="name" name="name"
+                                       placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control"
+                                       id="email" name="email"
+                                       placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control"
+                                       id="phone" name="phone"
+                                       placeholder="Enter phone number">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject"
+                                        name="subject" required>
+                                    <option value="" selected disabled>Select subject</option>
+                                    <option value="general">General Enquiry</option>
+                                    <option value="reservation">Reservation</option>
+                                    <option value="event">Private Events</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message"
+                                          name="message" rows="5"
+                                          placeholder="Write your message here..."
+                                          required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="send-btn">
+                                    SEND MESSAGE
+                                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+    <div class="container">
+        <p class="gold-text">FIND US</p>
+        <h2>Visit  Aurelia</h2>
+
+        <div class="map-box">
+            <iframe
+                src="https://maps.google.com/maps?q=Chennai%2C%20Tamil%20Nadu%2C%20India&output=embed"
+                title="Map of Chennai"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+                   <!-- BOOKING PAGE  -->
+
+                   <section class="booking-hero" id="booking">
+
+        <div class="hero-content">
+
+            <p class="small-title">AN EXTRAORDINARY DINING EXPERIENCE</p>
+
+            <h1>Reserve Your Table</h1>
+
+            <p>
+                Every great evening begins with a reservation.
+                Let us make your experience unforgettable.
+            </p>
+
+        </div>
+
+
+
+    <!-- Booking Section -->
+
+    <section class="booking-section">
+
+        <div class="container">
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Booking Form -->
+
+                <div class="col-lg-6">
+
+                    <div class="booking-card">
+
+                        <p class="small-title">YOUR EXPERIENCE AWAITS</p>
+
+                        <h2>Make a Reservation</h2>
+
+                        <p class="description">
+                            Choose your preferred date and time
+                            and allow us to take care of the rest.
+                        </p>
+
+                        <form action="#" method="post">
+
+                            <!-- Reservation Type -->
+
+                            <div class="reservation-type">
+
+                                <label>
+                                    <input type="radio" name="reservation"
+                                        value="dine-in" checked>
+
+                                    <span>
+                                        <i class="fa-solid fa-utensils"></i>
+                                        Dine In
+                                    </span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="reservation"
+                                        value="private-event">
+
+                                    <span>
+                                        <i class="fa-solid fa-champagne-glasses"></i>
+                                        Private Event
+                                    </span>
+                                </label>
+
+                            </div>
+
+
+                            <!-- Date -->
+
+                            <div class="mb-4">
+
+                                <label for="date" class="form-label">
+                                    Select Date
+                                </label>
+
+                                <input type="date" class="form-control"
+                                    id="date" name="date" required>
+
+                            </div>
+
+
+                            <!-- Time -->
+
+                            <div class="mb-4">
+
+                                <label for="time" class="form-label">
+                                    Select Time
+                                </label>
+
+                                <select class="form-select" id="time"
+                                    name="time" required>
+
+                                    <option value="">Choose your time</option>
+
+                                    <option>12:00 PM</option>
+                                    <option>12:30 PM</option>
+                                    <option>01:00 PM</option>
+                                    <option>01:30 PM</option>
+                                    <option>06:00 PM</option>
+                                    <option>06:30 PM</option>
+                                    <option>07:00 PM</option>
+                                    <option>07:30 PM</option>
+                                    <option>08:00 PM</option>
+                                    <option>08:30 PM</option>
+                                    <option>09:00 PM</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Guests -->
+
+                            <div class="mb-4">
+
+                                <label for="guests" class="form-label">
+                                    Number of Guests
+                                </label>
+
+                                <select class="form-select" id="guests"
+                                    name="guests" required>
+
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Name -->
+
+                            <div class="mb-4">
+
+                                <label for="name" class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input type="text" class="form-control"
+                                    id="name" name="name"
+                                    placeholder="Enter your name" required>
+
+                            </div>
+
+
+                            <!-- Email -->
+
+                            <div class="mb-4">
+
+                                <label for="email" class="form-label">
+                                    Email Address
+                                </label>
+
+                                <input type="email" class="form-control"
+                                    id="email" name="email"
+                                    placeholder="Enter your email" required>
+
+                            </div>
+
+
+                            <!-- Phone -->
+
+                            <div class="mb-4">
+
+                                <label for="phone" class="form-label">
+                                    Phone Number
+                                </label>
+
+                                <input type="tel" class="form-control"
+                                    id="phone" name="phone"
+                                    placeholder="Enter your phone number" required>
+
+                            </div>
+
+
+                            <!-- Special Requests -->
+
+                            <div class="mb-4">
+
+                                <label for="requests" class="form-label">
+                                    Special Requests
+                                </label>
+
+                                <textarea class="form-control" id="requests"
+                                    name="requests" rows="3"
+                                    placeholder="Birthday, anniversary, dietary preferences..."></textarea>
+
+                            </div>
+
+
+                            <!-- Submit -->
+
+                            <button type="submit" class="reserve-btn">
+
+                                BOOK YOUR TABLE
+
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Booking Image -->
+
+                <div class="col-lg-6">
+
+                    <div class="booking-image">
+
+                        <div class="image-overlay">
+
+                            <p class="small-title">THE AURELIA EXPERIENCE</p>
+
+                            <h2>
+                                Good Food<br>
+                                Brings People<br>
+                                Together.
+                            </h2>
+
+                            <p>
+                                Celebrate life's special moments with
+                                exceptional cuisine and unforgettable
+                                hospitality.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Benefits -->
+
+            <div class="row benefits text-center g-4">
+
+                <div class="col-md-4">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                    <h5>Instant Confirmation</h5>
+
+                    <p>Receive your reservation details after confirmation.</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h5>Special Requests</h5>
+
+                    <p>Tell us how we can make your visit special.</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <i class="fa-solid fa-wine-glass"></i>
+
+                    <h5>Private Dining</h5>
+
+                    <p>Perfect for celebrations and intimate gatherings.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row gy-4 align-items-center">
+
+                <div class="col-md-4">
+
+                    <h3>AURELIA</h3>
+
+                    <p>FINE DINING & LOUNGE</p>
+
+                </div>
+
+                <div class="col-md-4 text-md-center">
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Chennai, Tamil Nadu, India
+                    </p>
+
+                    <p>
+                        <i class="fa-regular fa-clock"></i>
+                        Mon – Sun: 12 PM – 11 PM
+                    </p>
+
+                </div>
+
+                <div class="col-md-4 text-md-end social-icons">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+                 2026 AURELIA. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
 
     </main>
 
