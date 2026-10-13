@@ -600,7 +600,7 @@ video {
                    .right-side{
 
                     /* background-color:wheat; */
-                    height:500px;
+                    min-height:500px;
                     width:50%;
                     display:flex;
                     gap:20px;
